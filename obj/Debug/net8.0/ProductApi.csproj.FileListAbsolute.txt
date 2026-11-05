@@ -46,3 +46,11 @@
 /home/robin/dotnet_works/ProductApi/obj/Debug/net8.0/ProductApi.pdb
 /home/robin/dotnet_works/ProductApi/obj/Debug/net8.0/ProductApi.genruntimeconfig.cache
 /home/robin/dotnet_works/ProductApi/obj/Debug/net8.0/ref/ProductApi.dll
+/home/robin/dotnet_works/ProductApi/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/robin/dotnet_works/ProductApi/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/home/robin/dotnet_works/ProductApi/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/robin/dotnet_works/ProductApi/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/home/robin/dotnet_works/ProductApi/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+/home/robin/dotnet_works/ProductApi/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/robin/dotnet_works/ProductApi/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/home/robin/dotnet_works/ProductApi/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
