@@ -1,0 +1,86 @@
+@model ProductApi.src.Models.Product
+
+@{
+    ViewData["Title"] = "Create Product";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <h1>Create Product</h1>
+
+        <hr />
+
+        <form asp-controller="ProductsViews"
+              asp-action="Create"
+              method="post">
+
+            @Html.AntiForgeryToken()
+
+            <div asp-validation-summary="ModelOnly"
+                 class="text-danger mb-3">
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label"></label>
+
+                <input asp-for="Name"
+                       class="form-control"
+                       placeholder="Enter product name" />
+
+                <span asp-validation-for="Name"
+                      class="text-danger">
+                </span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Description"
+                       class="form-label">
+                </label>
+
+                <textarea asp-for="Description"
+                          class="form-control"
+                          rows="4"
+                          placeholder="Enter product description">
+                </textarea>
+
+                <span asp-validation-for="Description"
+                      class="text-danger">
+                </span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Price"
+                       class="form-label">
+                </label>
+
+                <input asp-for="Price"
+                       type="number"
+                       class="form-control"
+                       placeholder="Enter price"
+                       step="0.01"
+                       min="0.01" />
+
+                <span asp-validation-for="Price"
+                      class="text-danger">
+                </span>
+            </div>
+
+            <div class="mt-4">
+                <button type="submit"
+                        class="btn btn-success">
+                    Create Product
+                </button>
+
+                <a asp-controller="ProductsViews"
+                   asp-action="Index"
+                   class="btn btn-secondary">
+                    Cancel
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
