@@ -1,0 +1,70 @@
+@model ProductApi.src.Models.Product
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-7">
+
+        <nav aria-label="breadcrumb" class="mb-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="@Url.Action("Index", "ProductViews")">Products</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Details</li>
+            </ol>
+        </nav>
+
+        <div class="card">
+            <div class="card-header bg-info text-white d-flex justify-content-between align-items-center">
+                <h5 class="mb-0"><i class="bi bi-info-circle me-2"></i>Product Details</h5>
+                <span class="badge bg-white text-info">ID: @Model.Id</span>
+            </div>
+            <div class="card-body">
+                <dl class="row mb-0">
+
+                    <dt class="col-sm-4 text-muted">Product Name</dt>
+                    <dd class="col-sm-8 fw-semibold">@Model.Name</dd>
+
+                    <hr class="my-2" />
+
+                    <dt class="col-sm-4 text-muted">Price</dt>
+                    <dd class="col-sm-8">
+                        <span class="badge bg-success fs-6">@Model.Price.ToString("C")</span>
+                    </dd>
+
+                    <hr class="my-2" />
+
+                    <dt class="col-sm-4 text-muted">Description</dt>
+                    <dd class="col-sm-8">@(Model.Description ?? "—")</dd>
+
+                    <hr class="my-2" />
+
+                    <dt class="col-sm-4 text-muted">Created At</dt>
+                    <dd class="col-sm-8 text-muted">
+                        <small>@Model.CreatedAt.ToString("MMMM dd, yyyy hh:mm tt")</small>
+                    </dd>
+
+                </dl>
+            </div>
+            <div class="card-footer d-flex gap-2">
+                <a asp-controller="ProductViews"
+                   asp-action="Edit"
+                   asp-route-id="@Model.Id"
+                   class="btn btn-primary">
+                    <i class="bi bi-pencil me-1"></i> Edit
+                </a>
+                <a asp-controller="ProductViews"
+                   asp-action="Delete"
+                   asp-route-id="@Model.Id"
+                   class="btn btn-danger">
+                    <i class="bi bi-trash me-1"></i> Delete
+                </a>
+                <a asp-controller="ProductViews" asp-action="Index" class="btn btn-outline-secondary ms-auto">
+                    <i class="bi bi-arrow-left me-1"></i> Back to List
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
