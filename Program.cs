@@ -7,7 +7,21 @@ using Microsoft.IdentityModel.Tokens;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();
+//builder.Services.AddControllers(); // only for API controllers, not for Razor Pages or MVC views
+//builder.Services.AddControllersWithViews(); // for API controllers and Razor Pages or MVC views
+builder.Services
+    .AddControllersWithViews()
+    .AddRazorOptions(options =>
+    {
+        options.ViewLocationFormats.Add(
+            "/src/Views/{1}/{0}.cshtml"
+        );
+
+        options.ViewLocationFormats.Add(
+            "/src/Views/Shared/{0}.cshtml"
+        );
+    });
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -52,8 +66,7 @@ if (app.Environment.IsDevelopment())
     // This line sets Swagger UI at the root (http://localhost:5141/)
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("swagger/v1/swagger.json", "ProductApi v1");
-        c.RoutePrefix = string.Empty;
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "ProductApi v1");
     });
 }
 
@@ -63,6 +76,12 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=ProductViews}/{action=Index}/{id?}"
+);
+
 
 app.Run();
 

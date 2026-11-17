@@ -17,3 +17,31 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = /home/robin/dotnet_works/ProductApi
 build_property._RazorSourceGeneratorDebug = 
+
+[/home/robin/dotnet_works/ProductApi/src/Views/ProductViews/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = c3JjL1ZpZXdzL1Byb2R1Y3RWaWV3cy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/robin/dotnet_works/ProductApi/src/Views/ProductViews/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = c3JjL1ZpZXdzL1Byb2R1Y3RWaWV3cy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/robin/dotnet_works/ProductApi/src/Views/ProductViews/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = c3JjL1ZpZXdzL1Byb2R1Y3RWaWV3cy9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/robin/dotnet_works/ProductApi/src/Views/ProductViews/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = c3JjL1ZpZXdzL1Byb2R1Y3RWaWV3cy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/robin/dotnet_works/ProductApi/src/Views/ProductViews/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = c3JjL1ZpZXdzL1Byb2R1Y3RWaWV3cy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/robin/dotnet_works/ProductApi/src/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = c3JjL1ZpZXdzL1NoYXJlZC9fTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/robin/dotnet_works/ProductApi/src/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = c3JjL1ZpZXdzL1NoYXJlZC9fVmFsaWRhdGlvblNjcmlwdHNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
