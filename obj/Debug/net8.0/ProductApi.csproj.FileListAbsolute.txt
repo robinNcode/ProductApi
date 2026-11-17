@@ -56,3 +56,4 @@
 /home/robin/dotnet_works/ProductApi/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
 /home/robin/dotnet_works/ProductApi/obj/Debug/net8.0/ProductApi.RazorAssemblyInfo.cache
 /home/robin/dotnet_works/ProductApi/obj/Debug/net8.0/ProductApi.RazorAssemblyInfo.cs
+/home/robin/dotnet_works/ProductApi/obj/Debug/net8.0/ProductApi.sourcelink.json

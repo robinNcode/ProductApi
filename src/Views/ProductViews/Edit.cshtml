@@ -1,0 +1,130 @@
+@model ProductApi.src.Models.Product
+@{
+    ViewData["Title"] = "Edit Product";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-7">
+
+        <nav aria-label="breadcrumb" class="mb-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="@Url.Action("Index", "ProductViews")">Products</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Edit</li>
+            </ol>
+        </nav>
+
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="bi bi-pencil me-2"></i>Edit Product</h5>
+            </div>
+            <div class="card-body">
+
+                <form asp-controller="ProductViews"
+                      asp-action="Edit"
+                      asp-route-id="@Model.Id"
+                      method="post"
+                      id="editProductForm"
+                      novalidate>
+
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" asp-for="Id" />
+
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger" id="modelErrors"></div>
+
+                    <!-- Name -->
+                    <div class="mb-3">
+                        <label asp-for="Name" class="form-label fw-semibold"></label>
+                        <input asp-for="Name"
+                               class="form-control"
+                               placeholder="Enter product name"
+                               maxlength="150"
+                               autocomplete="off" />
+                        <span asp-validation-for="Name" class="text-danger small"></span>
+                        <div class="form-text text-end">
+                            <span id="nameCount">0</span>/150
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="mb-3">
+                        <label asp-for="Description" class="form-label fw-semibold"></label>
+                        <textarea asp-for="Description"
+                                  class="form-control"
+                                  rows="4"
+                                  placeholder="Enter product description (optional)"
+                                  maxlength="500"></textarea>
+                        <span asp-validation-for="Description" class="text-danger small"></span>
+                        <div class="form-text text-end">
+                            <span id="descCount">0</span>/500
+                        </div>
+                    </div>
+
+                    <!-- Price -->
+                    <div class="mb-3">
+                        <label asp-for="Price" class="form-label fw-semibold"></label>
+                        <div class="input-group">
+                            <span class="input-group-text">$</span>
+                            <input asp-for="Price"
+                                   type="number"
+                                   class="form-control"
+                                   placeholder="0.00"
+                                   step="0.01"
+                                   min="0.01"
+                                   max="999999.99" />
+                        </div>
+                        <span asp-validation-for="Price" class="text-danger small"></span>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="d-flex gap-2 mt-4">
+                        <button type="submit" class="btn btn-primary" id="submitBtn">
+                            <i class="bi bi-floppy me-1"></i> Save Changes
+                        </button>
+                        <a asp-controller="ProductViews"
+                           asp-action="Details"
+                           asp-route-id="@Model.Id"
+                           class="btn btn-outline-secondary">
+                            <i class="bi bi-arrow-left me-1"></i> Back to Details
+                        </a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        $(function () {
+            // Character counters
+            function updateCount(input, counterId) {
+                $(counterId).text($(input).val().length);
+            }
+
+            $('#Name').on('input', function () { updateCount(this, '#nameCount'); });
+            $('#Description').on('input', function () { updateCount(this, '#descCount'); });
+
+            // Initialize with current lengths
+            updateCount('#Name', '#nameCount');
+            updateCount('#Description', '#descCount');
+
+            // Hide model-only error container when empty
+            if ($('#modelErrors').text().trim() === '') {
+                $('#modelErrors').hide();
+            }
+
+            // Loading spinner on submit
+            $('#editProductForm').on('submit', function () {
+                if ($(this).valid()) {
+                    $('#submitBtn').prop('disabled', true)
+                        .html('<span class="spinner-border spinner-border-sm me-1"></span>Saving…');
+                }
+            });
+        });
+    </script>
+}

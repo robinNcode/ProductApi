@@ -81,6 +81,10 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=ProductViews}/{action=Index}/{id?}"
 );
+app.MapControllerRoute(
+    name: "product-create",
+    pattern: "api/{controller=ProductViews}/{action=Create}"
+);
 
 
 app.Run();

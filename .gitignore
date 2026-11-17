@@ -1,3 +1,4 @@
 # build folders
 bin/
 obj/
+obj/Debug/
