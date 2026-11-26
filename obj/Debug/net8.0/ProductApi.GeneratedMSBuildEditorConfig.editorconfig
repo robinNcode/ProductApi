@@ -1,59 +1,64 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v8.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EntryPointFilePath = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProductApi
 build_property.RootNamespace = ProductApi
-build_property.ProjectDir = /home/robin/dotnet_works/ProductApi/
+build_property.ProjectDir = E:\dotnet_works\ProductApi\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/robin/dotnet_works/ProductApi
+build_property.MSBuildProjectDirectory = E:\dotnet_works\ProductApi
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
-[/home/robin/dotnet_works/ProductApi/src/Views/ProductViews/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = c3JjL1ZpZXdzL1Byb2R1Y3RWaWV3cy9DcmVhdGUuY3NodG1s
+[E:/dotnet_works/ProductApi/src/Views/ProductViews/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = c3JjXFZpZXdzXFByb2R1Y3RWaWV3c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/robin/dotnet_works/ProductApi/src/Views/ProductViews/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = c3JjL1ZpZXdzL1Byb2R1Y3RWaWV3cy9EZWxldGUuY3NodG1s
+[E:/dotnet_works/ProductApi/src/Views/ProductViews/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = c3JjXFZpZXdzXFByb2R1Y3RWaWV3c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/robin/dotnet_works/ProductApi/src/Views/ProductViews/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = c3JjL1ZpZXdzL1Byb2R1Y3RWaWV3cy9EZXRhaWxzLmNzaHRtbA==
+[E:/dotnet_works/ProductApi/src/Views/ProductViews/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = c3JjXFZpZXdzXFByb2R1Y3RWaWV3c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/robin/dotnet_works/ProductApi/src/Views/ProductViews/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = c3JjL1ZpZXdzL1Byb2R1Y3RWaWV3cy9FZGl0LmNzaHRtbA==
+[E:/dotnet_works/ProductApi/src/Views/ProductViews/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = c3JjXFZpZXdzXFByb2R1Y3RWaWV3c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/robin/dotnet_works/ProductApi/src/Views/ProductViews/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = c3JjL1ZpZXdzL1Byb2R1Y3RWaWV3cy9JbmRleC5jc2h0bWw=
+[E:/dotnet_works/ProductApi/src/Views/ProductViews/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = c3JjXFZpZXdzXFByb2R1Y3RWaWV3c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/robin/dotnet_works/ProductApi/src/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = c3JjL1ZpZXdzL1NoYXJlZC9fTGF5b3V0LmNzaHRtbA==
+[E:/dotnet_works/ProductApi/src/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = c3JjXFZpZXdzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/robin/dotnet_works/ProductApi/src/Views/Shared/_Navbar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = c3JjL1ZpZXdzL1NoYXJlZC9fTmF2YmFyLmNzaHRtbA==
+[E:/dotnet_works/ProductApi/src/Views/Shared/_Navbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = c3JjXFZpZXdzXFNoYXJlZFxfTmF2YmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/robin/dotnet_works/ProductApi/src/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = c3JjL1ZpZXdzL1NoYXJlZC9fVmFsaWRhdGlvblNjcmlwdHNQYXJ0aWFsLmNzaHRtbA==
+[E:/dotnet_works/ProductApi/src/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = c3JjXFZpZXdzXFNoYXJlZFxfVmFsaWRhdGlvblNjcmlwdHNQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/robin/dotnet_works/ProductApi/src/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = c3JjL1ZpZXdzL19WaWV3SW1wb3J0cy5jc2h0bWw=
+[E:/dotnet_works/ProductApi/src/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = c3JjXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/robin/dotnet_works/ProductApi/src/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = c3JjL1ZpZXdzL19WaWV3U3RhcnQuY3NodG1s
+[E:/dotnet_works/ProductApi/src/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = c3JjXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

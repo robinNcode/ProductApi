@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net8.0": {
       "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.0": {
@@ -1532,28 +1532,36 @@
     ]
   },
   "packageFolders": {
-    "/home/robin/.nuget/packages/": {}
+    "C:\\Users\\VPN Technology\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/robin/dotnet_works/ProductApi/ProductApi.csproj",
+      "projectUniqueName": "E:\\dotnet_works\\ProductApi\\ProductApi.csproj",
       "projectName": "ProductApi",
-      "projectPath": "/home/robin/dotnet_works/ProductApi/ProductApi.csproj",
-      "packagesPath": "/home/robin/.nuget/packages/",
-      "outputPath": "/home/robin/dotnet_works/ProductApi/obj/",
+      "projectPath": "E:\\dotnet_works\\ProductApi\\ProductApi.csproj",
+      "packagesPath": "C:\\Users\\VPN Technology\\.nuget\\packages\\",
+      "outputPath": "E:\\dotnet_works\\ProductApi\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/robin/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\VPN Technology\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {}
         }
@@ -1562,10 +1570,17 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "11.0.100"
     },
     "frameworks": {
       "net8.0": {
+        "framework": "net8.0",
         "targetAlias": "net8.0",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
@@ -1604,7 +1619,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.134/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\11.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

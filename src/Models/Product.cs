@@ -11,6 +11,13 @@ public class Product
     [Display(Name = "Product Name")]
     public string Name { get; set; } = string.Empty;
 
+
+    [Required(ErrorMessage = "Product name is required.")]
+    [StringLength(150, MinimumLength = 2, ErrorMessage = "Name must be between 2 and 150 characters.")]
+    [Display(Name = "Product Code")]
+    public string Code { get; set; } = string.Empty;
+
+
     [Required(ErrorMessage = "Price is required.")]
     [Range(0.01, 999999.99, ErrorMessage = "Price must be between 0.01 and 999,999.99.")]
     [DataType(DataType.Currency)]
